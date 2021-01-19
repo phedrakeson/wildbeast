@@ -198,6 +198,16 @@ img {
   align-self: end;
 }
 
+@media (max-width: 600px) {
+  .content {
+    grid-template-columns: auto;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
 /* estilos content */
 
 p {
@@ -313,6 +323,8 @@ p {
   padding: 30px;
 
   grid-gap: 30px;
+
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .footer {
